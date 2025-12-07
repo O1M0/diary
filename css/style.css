@@ -1,24 +1,31 @@
-body {
-    background-color: rgb(250, 238, 224);
-    padding: 0px;
-    margin: 0px;
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(250, 238, 224);
+  font-family: "Kaisei Decol", serif;
+}
+
+header{
+    height: 85px;
+    background: #fff;
 }
 
 .logo {
     float: left;
-    height: 100px;
+    height: 60px;
     width: auto;
-    padding: 40px;
+    padding: 15px;
 }
 
 .header-menu {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .header-menu li {
     list-style: none;
     float: right;
-    margin: 70px 70px 0px 0px;
+    margin: 30px 70px 0px 0px;
 }
 
 .btn {
@@ -31,6 +38,22 @@ body {
     padding-top: 5px;
 }
 
-header h2 {
-    clear: both;
+.main-visual {
+    background-image: url("../images/background.jpg");
+    min-height: calc(100vh - 85px);
+    background-size: cover;  
+}
+
+.main-visual p {
+    font-size: 4vw;
+    text-align: center;
+    padding-top: 200px;
+    margin: 0px;
+    color: #fff;
+}
+
+.get-started {
+    font-family: "Kaisei Decol", serif;
+    display: block;
+    margin: 50px auto 0;
 }
