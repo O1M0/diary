@@ -88,6 +88,7 @@ header {
   background-image: url("../images/background.jpg");
   min-height: calc(100vh - 85px);
   background-size: cover;
+  margin:5rem 0;
 }
 
 .main-visual p {
@@ -206,7 +207,7 @@ header {
   align-items: stretch;
   justify-content: center;
   gap: 2rem;
-  margin: 4rem auto 2rem; /* 料金表全体の余白（1. margin） */
+  margin: 6rem auto; 
   width:80%;
 }
 
@@ -307,6 +308,91 @@ header {
   .pricecard.premium {
     order: 1;
   }
+}
+
+.news{
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 20px 0;
+  width: 85%;
+  margin: 10rem auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.news-list{
+  list-style: none outside;
+  margin: 5rem auto ;  /* ← ここを変更：左右を auto にして中央寄せ */
+  padding: 0;
+  width: 60%;
+} 
+
+.news-list .item:hover{
+  background: #ffbf5f;
+  transition: 0.3s;
+  color:#fff;
+}
+
+.news-list .item a{
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #CCC;
+  padding: 20px 20px;
+}
+.news-list .item:first-child a{
+  border-top: 1px solid #CCC;
+}
+.news-list .item .date{
+  margin: 0;
+  min-width: 140px;
+  font-size: 16px;
+  color: #999;
+  padding: 0 20px 0 0;
+}
+.news-list .item .category{
+  margin: 0;
+  min-width: 140px;
+  padding: 0 20px 0 0;
+}
+.news-list .item .category span{
+  background: #999;
+  color: #FFF;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 12px;
+  line-height: 1;
+}
+.news-list .item .notion span{
+  background: #ff0000;
+  color: #FFF;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.news-list .item .title{
+  margin: 0;
+  width: 100%;
+}
+.news-list .item a:hover .title{
+  color: #fff;
+}
+
+@media screen and (max-width: 767px){
+.news-list .item a{
+  flex-wrap: wrap;
+}
+.news-list .item .date{
+  min-width: 100px;
+}
+.news-list .item .title{
+  margin-top: 10px;
+}
 }
 
 /* ========= フッター ========= */
