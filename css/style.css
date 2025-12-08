@@ -11,24 +11,29 @@ header {
     height: 85px;
     background: #fff;
     font-size: 1rem;
+    display: flex;
+    align-items: center;          
+    justify-content: space-between; 
+    padding: 0px 40px;
 }
 
 .logo {
-    float: left;
     height: 60px;
     width: auto;
-    padding: 15px;
 }
 
 .header-menu {
     margin: 0;
     padding: 0;
+
+    list-style: none;        
+    display: flex;              
+    align-items: center;
+    gap: 40px;
 }
 
 .header-menu li {
-    list-style: none;
-    float: right;
-    margin: 30px 70px 0px 0px;
+    margin:0px;
 }
 
 .btn {
@@ -60,4 +65,8 @@ header {
     display: block;
     margin: 50px auto 0;
     font-size:1rem;
+}
+
+.app-explanation{
+    height: 300px;
 }
