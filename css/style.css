@@ -7,6 +7,31 @@ body {
   font-size: 100%;
 }
 
+/* 全体に細いスクロールバー */
+* {
+  scrollbar-width: thin;                         /* Firefox 用 */
+  scrollbar-color: #c89a5b #f7e6d5;              /* Firefox: thumb 色 / track 色 */
+}
+
+/* WebKit 系ブラウザ用 */
+::-webkit-scrollbar {
+  width: 10px;                                   /* スクロールバーの太さ */
+}
+
+::-webkit-scrollbar-track {
+  background: #f7e6d5;                           /* ベージュ系 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c89a5b;                           /* 茶色寄り */
+  border-radius: 999px;
+  border: 2px solid #f7e6d5;                     /* 周りを少し明るく */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b37d3f;                           /* ホバーで少し濃く */
+}
+
 /* 全ての ul の基本スタイル（1つに統合） */
 ul {
   list-style: none;
