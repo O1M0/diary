@@ -88,7 +88,7 @@ header {
   background-image: url("../images/background.jpg");
   min-height: calc(100vh - 85px);
   background-size: cover;
-  margin:5rem 0;
+  margin-bottom:5rem;
 }
 
 .main-visual p {
@@ -200,6 +200,33 @@ header {
 }
 
 /* ========= 料金表 ========= */
+
+.pricing-heading{
+  position: relative;
+  display: block;    
+  width: fit-content; 
+  margin: 5rem auto;   
+  padding: 0 55px;
+  font-size: 3rem;
+}
+
+.pricing-heading:before, .pricing-heading:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.pricing-heading:before {
+  left:0;
+}
+.pricing-heading:after {
+  right: 0;
+}
 
 .pricecards {
   display: flex;
@@ -313,19 +340,47 @@ header {
 .news{
   background: #ffffff;
   border-radius: 30px;
-  padding: 20px 0;
-  width: 85%;
-  margin: 10rem auto;
+  padding: 5px 0;
+  width: 70%;
+  margin: 5rem auto;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
+.news-h2 {
+  font-size: 4rem;
+  position: relative;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.news-h2 span {
+  font-size: 18px;
+  font-size: 1.8rem;
+  display: block;
+}
+
+.news-h2:before {
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: '';
+  border-radius: 3px;
+  background: #fa4141;
+}
+
+
 .news-list{
   list-style: none outside;
-  margin: 5rem auto ;  /* ← ここを変更：左右を auto にして中央寄せ */
+  margin: 3rem auto ;  /* ← ここを変更：左右を auto にして中央寄せ */
   padding: 0;
   width: 60%;
 } 
 
+.title{
+  font-size: 0.9rem;
+}
 .news-list .item:hover{
   background: #ffbf5f;
   transition: 0.3s;
@@ -347,7 +402,7 @@ header {
 .news-list .item .date{
   margin: 0;
   min-width: 140px;
-  font-size: 16px;
+  font-size: 1rem;
   color: #999;
   padding: 0 20px 0 0;
 }
@@ -362,7 +417,7 @@ header {
   text-align: center;
   display: inline-block;
   padding: 5px 20px;
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 1;
 }
 .news-list .item .notion span{
@@ -371,7 +426,7 @@ header {
   text-align: center;
   display: inline-block;
   padding: 5px 20px;
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 1;
 }
 
