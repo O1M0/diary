@@ -1,13 +1,16 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(250, 238, 224);
-  font-family: "Kaisei Decol", serif;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 238, 224);
+    font-family: "Kaisei Decol", serif;
+    font-size: 100%;
 }
 
-header{
+header {
     height: 85px;
     background: #fff;
+    font-size: 1rem;
 }
 
 .logo {
@@ -29,7 +32,7 @@ header{
 }
 
 .btn {
-    border: 2px double #000000;
+    border: 3px double #000000;
     border-radius: 10px;
     padding: 5px;
 }
@@ -41,11 +44,11 @@ header{
 .main-visual {
     background-image: url("../images/background.jpg");
     min-height: calc(100vh - 85px);
-    background-size: cover;  
+    background-size: cover;
 }
 
 .main-visual p {
-    font-size: 4vw;
+    font-size: 4rem;
     text-align: center;
     padding-top: 200px;
     margin: 0px;
@@ -56,4 +59,5 @@ header{
     font-family: "Kaisei Decol", serif;
     display: block;
     margin: 50px auto 0;
+    font-size:1rem;
 }
