@@ -41,7 +41,7 @@ ul {
 
 /* ページ全体の選択スタイル */
 ::selection {
-  background: #ffeb3b;
+  background: #ff9800;
   color: #000;
 }
 
