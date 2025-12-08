@@ -7,6 +7,27 @@ body {
     font-size: 100%;
 }
 
+@media (max-width: 1255px) {
+  body > *:not(.sp-warning) {
+    display: none;
+  }
+
+  .sp-warning {
+    display: flex;
+  }
+}
+
+@media (min-width: 1255px) {
+  .sp-warning    {
+    display: none;
+  }
+}
+
+.sp-warning{
+    font-size: 1rem;
+    justify-content: center;
+}
+
 header {
     height: 85px;
     font-size: 1rem;
