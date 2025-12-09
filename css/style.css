@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(250, 238, 224);
+  background-color: rgb(250, 223, 192);
   font-family: "Kaisei Decol", serif;
   font-size: 100%;
 }
@@ -69,12 +69,36 @@ ul {
 
 /* ヘッダー */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   height: 85px;
   font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
+  background-color: rgb(250, 238, 224);
+
+  /* ここでアニメーションするプロパティを指定 */
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    border-radius 0.3s ease,
+    padding 0.3s ease,
+    margin 0.3s ease,
+    height 0.3s ease;
+}
+
+/* スクロール後のヘッダーの見た目 */
+header.scrolled {
+  transform: translateY(20px);  
+  margin: 8px 40px 0;                     /* 上下左右を少し内側にして浮かせる感じ */
+  height: 80px;                           /* 少し低くする */
+  border-radius: 999px;                   /* 角を丸く（丸 pill っぽく） */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+  background-color:   rgba(250, 238, 224, 0.95); /* ちょっとだけ透け感 */
 }
 
 .logo {
