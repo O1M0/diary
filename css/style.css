@@ -152,11 +152,14 @@ header.scrolled {
 }
 
 .main-visual p {
-  font-size: 4rem;
-  text-align: center;
-  padding-top: 200px;
-  margin: 0;
-  color: #fff;
+font-size: 4rem;        /* ← 上を優先 */
+text-align: center;
+padding-top: 200px;     /* ← 上を優先 */
+margin: 0;
+
+color: #fff;             /* ← 上を優先（#000は採用しない） */
+font-weight: bold;
+letter-spacing: 2px;
 }
 
 .get-started {

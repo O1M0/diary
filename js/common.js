@@ -41,6 +41,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// === Main Visual Text Animation ===
+var textWrapper = document.querySelector('.main-visual p');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='text'>$&</span>");
+
+anime({
+  targets: '.main-visual p .text',
+  opacity: [0, 1],
+  easing: "easeInOutQuad",
+  duration: 1000,
+  delay: (el, i) => 130 * (i + 1)
+});
+
+
+// === Floating Circles Animation ===
 document.addEventListener('DOMContentLoaded', () => {
     const circleContainer = document.querySelector('.circles');
     if (!circleContainer) return;
