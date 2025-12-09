@@ -1,3 +1,14 @@
+window.addEventListener("load", () => {
+  const loading = document.getElementById("loading");
+
+  if (!loading) return;
+
+  // ロード完了後、少し余韻をつけて消す
+  setTimeout(() => {
+    loading.classList.add("is-hidden");
+  }, 1500);
+});
+
 
 // ==== Smooth Scroll (PC only) ====
 document.addEventListener('DOMContentLoaded', () => {

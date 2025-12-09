@@ -69,6 +69,75 @@ ul {
   }
 }
 
+/* ===== Loading Screen ===== */
+#loading {
+  position: fixed;
+  inset: 0;
+  background: #faeee0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#loading.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-wrap {
+  text-align: center;
+}
+
+/* 円形ローダー */
+.loader {
+  width: 56px;
+  height: 56px;
+  border: 2px solid rgba(120, 80, 60, 0.25);
+  border-top-color: rgba(120, 80, 60, 0.85);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Loading文字 */
+.loading-text {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  color: #7a5c45;
+  animation: fadeText 1.4s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeText {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* ===== 本体フェードイン ===== */
+main {
+  opacity: 0;
+  animation: showMain 0.6s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes showMain {
+  to {
+    opacity: 1;
+  }
+}
+
+
 .sp-warning {
   font-size: 1rem;
   justify-content: center;
