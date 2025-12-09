@@ -28,9 +28,6 @@
   <!-- css -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- js -->
-  <script src="js/common.js" defer></script>
-
   <!-- googleFont -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,16 +37,46 @@
   <link rel="stylesheet" type="text/css"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
 </head>
 
-<body>
+<body class="is-loading">
 
-    <div id="loading">
-    <div class="loader-wrap">
-      <div class="loader"></div>
-      <p class="loading-text">Loading</p>
+  <!-- ▼ ローディングここから ▼ -->
+  <div id="loading">
+    <div class="loading-overlay">
+      <div class="loading-panel">
+        <div class="wagara-bg">
+          <!-- 本ローディング -->
+          <div class="book3d">
+            <div class="book-floor-shadow"></div>
+
+            <div class="book-block">
+              <!-- 左右の表紙 -->
+              <div class="book-cover book-cover-left"></div>
+              <div class="book-cover book-cover-right"></div>
+              <div class="book-spine"></div>
+
+              <!-- 中のページ束＋めくれるページ -->
+              <div class="book-pages">
+                <div class="page page-1"></div>
+                <div class="page page-2"></div>
+                <div class="page page-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="loading-message">日記をひらいています…</p>
+        <div class="loading-bar">
+          <div class="loading-bar-inner"></div>
+        </div>
+      </div>
     </div>
   </div>
+  <!-- ▲ ローディングここまで ▲ -->
+
 
   <div class="area">
     <ul class="circles"></ul>
@@ -236,6 +263,8 @@
           </svg> </a> </div>
     </div>
   </footer>
+  <!-- js -->
+  <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
