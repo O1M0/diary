@@ -1,11 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const header = document.querySelector('header');
-  if (!header) return;
-
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 100);
-  });
-});
 
 // ==== Smooth Scroll (PC only) ====
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,4 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   smoothScroll();
+});
+
+// === header-animation ===
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('header');
+  if (!header) return;
+
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 100);
+  });
 });
