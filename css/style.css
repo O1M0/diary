@@ -189,7 +189,7 @@ header {
   position: relative;
   width: fit-content;
   padding: 12px 16px;
-  border-bottom: 2px solid #333333;
+  border-bottom: 2px solid #ff8800; 
   font-size: 3rem;
 }
 
@@ -202,7 +202,7 @@ header {
   height: 2px;
   transform: rotate(-50deg);
   box-sizing: border-box;
-  background-color: #333333;
+  background-color: #ff8800;
 }
 
 .fukidashi-01-05::after {
@@ -215,7 +215,7 @@ header {
   box-sizing: border-box;
   border: 1px solid #ffffff;
   border-radius: 50%;
-  background-color: #333333;
+  background-color: #ff8800;
 }
 
 .explanation-p {
