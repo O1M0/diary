@@ -9,27 +9,34 @@ body {
 
 /* 全体に細いスクロールバー */
 * {
-  scrollbar-width: thin;                         /* Firefox 用 */
-  scrollbar-color: #c89a5b #f7e6d5;              /* Firefox: thumb 色 / track 色 */
+  scrollbar-width: thin;
+  /* Firefox 用 */
+  scrollbar-color: #c89a5b #f7e6d5;
+  /* Firefox: thumb 色 / track 色 */
 }
 
 /* WebKit 系ブラウザ用 */
 ::-webkit-scrollbar {
-  width: 10px;                                   /* スクロールバーの太さ */
+  width: 10px;
+  /* スクロールバーの太さ */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f7e6d5;                           /* ベージュ系 */
+  background: #f7e6d5;
+  /* ベージュ系 */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c89a5b;                           /* 茶色寄り */
+  background: #c89a5b;
+  /* 茶色寄り */
   border-radius: 999px;
-  border: 2px solid #f7e6d5;                     /* 周りを少し明るく */
+  border: 2px solid #f7e6d5;
+  /* 周りを少し明るく */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b37d3f;                           /* ホバーで少し濃く */
+  background: #b37d3f;
+  /* ホバーで少し濃く */
 }
 
 /* 全ての ul の基本スタイル（1つに統合） */
@@ -47,7 +54,7 @@ ul {
 
 /* スマホ警告（SP表示時のみ） */
 @media (max-width: 1255px) {
-  body > *:not(.sp-warning) {
+  body>*:not(.sp-warning) {
     display: none;
   }
 
@@ -93,12 +100,16 @@ header {
 
 /* スクロール後のヘッダーの見た目 */
 header.scrolled {
-  transform: translateY(20px);  
-  margin: 8px 40px 0;                     /* 上下左右を少し内側にして浮かせる感じ */
-  height: 80px;                           /* 少し低くする */
-  border-radius: 999px;                   /* 角を丸く（丸 pill っぽく） */
+  transform: translateY(20px);
+  margin: 8px 40px 0;
+  /* 上下左右を少し内側にして浮かせる感じ */
+  height: 80px;
+  /* 少し低くする */
+  border-radius: 999px;
+  /* 角を丸く（丸 pill っぽく） */
   box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
-  background-color:   rgba(250, 238, 224, 0.95); /* ちょっとだけ透け感 */
+  background-color: rgba(250, 238, 224, 0.95);
+  /* ちょっとだけ透け感 */
 }
 
 .logo {
@@ -137,7 +148,7 @@ header.scrolled {
   background-image: url("../images/background.jpg");
   min-height: calc(100vh - 85px);
   background-size: cover;
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
 }
 
 .main-visual p {
@@ -213,7 +224,7 @@ header.scrolled {
   position: relative;
   width: fit-content;
   padding: 12px 16px;
-  border-bottom: 2px solid #ff8800; 
+  border-bottom: 2px solid #ff8800;
   font-size: 3rem;
 }
 
@@ -250,7 +261,8 @@ header.scrolled {
 
 .app-overview {
   display: flex;
-  justify-content: center;     /* ← 中央基準 */
+  justify-content: center;
+  /* ← 中央基準 */
   align-items: center;
   gap: 10rem;
   margin: 10rem auto;
@@ -307,7 +319,8 @@ header.scrolled {
   font-size: 1.5rem;
   color: #333;
   margin-top: 2rem;
-  white-space: nowrap;   /* 改行防止 */
+  white-space: nowrap;
+  /* 改行防止 */
 }
 
 .app-overview-li::before {
@@ -325,22 +338,23 @@ header.scrolled {
   height: auto;
   border-radius: 30px;
   filter: grayscale(100%);
-  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
 }
 
 
 /* ========= 料金表 ========= */
 
-.pricing-heading{
+.pricing-heading {
   position: relative;
-  display: block;    
-  width: fit-content; 
-  margin: 5rem auto;   
+  display: block;
+  width: fit-content;
+  margin: 5rem auto;
   padding: 0 55px;
   font-size: 3rem;
 }
 
-.pricing-heading:before, .pricing-heading:after {
+.pricing-heading:before,
+.pricing-heading:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -352,8 +366,9 @@ header.scrolled {
 }
 
 .pricing-heading:before {
-  left:0;
+  left: 0;
 }
+
 .pricing-heading:after {
   right: 0;
 }
@@ -364,8 +379,8 @@ header.scrolled {
   align-items: stretch;
   justify-content: center;
   gap: 2rem;
-  margin: 6rem auto; 
-  width:80%;
+  margin: 6rem auto;
+  width: 80%;
 }
 
 .pricecard {
@@ -374,8 +389,10 @@ header.scrolled {
   border: 1px solid #eee;
   padding-bottom: 1rem;
   box-sizing: border-box;
-  border-radius: 20px;                       /* 2. 角丸 */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);/* 3. 全カードに影 */
+  border-radius: 20px;
+  /* 2. 角丸 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  /* 3. 全カードに影 */
   background-color: #fff;
 }
 
@@ -392,7 +409,8 @@ header.scrolled {
   color: #fff;
   padding: 10px;
   margin: 0;
-  border-radius: 20px 20px 0 0; /* 上だけ角丸 */
+  border-radius: 20px 20px 0 0;
+  /* 上だけ角丸 */
 }
 
 .pricecard.premium {
@@ -418,7 +436,7 @@ header.scrolled {
 .pricecard p {
   margin: 0;
   padding: 1rem;
-  text-align: center; 
+  text-align: center;
 }
 
 .pricecard a {
@@ -436,18 +454,23 @@ header.scrolled {
 }
 
 .pricecard a:hover {
-  background-color: #ff9800;   /* オレンジ */
+  background-color: #ff9800;
+  /* オレンジ */
   color: #fff;
-  transform: translateY(-2px); /* 少し浮かせる（任意） */
+  transform: translateY(-2px);
+  /* 少し浮かせる（任意） */
 }
 
 /* 画面が広いときは折り返さず横３つに並べる */
 @media screen and (min-width: 900px) {
   .pricecards {
-    flex-wrap: nowrap;                          /* 折り返さない */
+    flex-wrap: nowrap;
+    /* 折り返さない */
   }
+
   .pricecard {
-    flex: 0 0 calc((100% - 4rem) / 3);          /* 3等分（gap 2rem×2 を引いた残り） */
+    flex: 0 0 calc((100% - 4rem) / 3);
+    /* 3等分（gap 2rem×2 を引いた残り） */
   }
 }
 
@@ -467,7 +490,7 @@ header.scrolled {
   }
 }
 
-.news{
+.news {
   background: #ffffff;
   border-radius: 30px;
   padding: 5px 0;
@@ -501,23 +524,25 @@ header.scrolled {
 }
 
 
-.news-list{
+.news-list {
   list-style: none outside;
-  margin: 3rem auto ;  /* ← ここを変更：左右を auto にして中央寄せ */
+  margin: 3rem auto;
+  /* ← ここを変更：左右を auto にして中央寄せ */
   padding: 0;
-  width: 60%;
-} 
+  width: 70%;
+}
 
-.title{
+.title {
   font-size: 0.9rem;
 }
-.news-list .item:hover{
+
+.news-list .item:hover {
   background: #ffbf5f;
   transition: 0.3s;
-  color:#fff;
+  color: #fff;
 }
 
-.news-list .item a{
+.news-list .item a {
   display: flex;
   flex-wrap: wrap;
   flex-wrap: nowrap;
@@ -526,22 +551,26 @@ header.scrolled {
   border-bottom: 1px solid #CCC;
   padding: 20px 20px;
 }
-.news-list .item:first-child a{
+
+.news-list .item:first-child a {
   border-top: 1px solid #CCC;
 }
-.news-list .item .date{
+
+.news-list .item .date {
   margin: 0;
   min-width: 140px;
   font-size: 1rem;
   color: #999;
   padding: 0 20px 0 0;
 }
-.news-list .item .category{
+
+.news-list .item .category {
   margin: 0;
   min-width: 140px;
   padding: 0 20px 0 0;
 }
-.news-list .item .category span{
+
+.news-list .item .category span {
   background: #999;
   color: #FFF;
   text-align: center;
@@ -550,7 +579,8 @@ header.scrolled {
   font-size: 0.8rem;
   line-height: 1;
 }
-.news-list .item .notion span{
+
+.news-list .item .notion span {
   background: #ff0000;
   color: #FFF;
   text-align: center;
@@ -560,93 +590,96 @@ header.scrolled {
   line-height: 1;
 }
 
-.news-list .item .title{
+.news-list .item .title {
   margin: 0;
   width: 100%;
 }
-.news-list .item a:hover .title{
+
+.news-list .item a:hover .title {
   color: #fff;
 }
 
-@media screen and (max-width: 767px){
-.news-list .item a{
-  flex-wrap: wrap;
-}
-.news-list .item .date{
-  min-width: 100px;
-}
-.news-list .item .title{
-  margin-top: 10px;
-}
+@media screen and (max-width: 767px) {
+  .news-list .item a {
+    flex-wrap: wrap;
+  }
+
+  .news-list .item .date {
+    min-width: 100px;
+  }
+
+  .news-list .item .title {
+    margin-top: 10px;
+  }
 }
 
 .qa {
-    max-width: 700px;
-    margin:1rem auto;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 4px rgb(0 0 0 / 2%), 0 2px 3px -2px rgba(0 0 0 / 5%);
-    background-color: #fff;
+  max-width: 700px;
+  margin: 1rem auto;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 2%), 0 2px 3px -2px rgba(0 0 0 / 5%);
+  background-color: #fff;
 }
 
 .qa summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 1em 2em 1em 3em;
-    color: #000000;
-    font-weight: 600;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1em 2em 1em 3em;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .qa summary::before,
 .qa p::before {
-    position: absolute;
-    left: 1em;
-    font-weight: 600;
-    font-size: 1.3em;
+  position: absolute;
+  left: 1em;
+  font-weight: 600;
+  font-size: 1.3em;
 }
 
 .qa summary::before {
-    color: #75bbff;
-    content: "Q";
+  color: #75bbff;
+  content: "Q";
 }
 
 .qa summary::after {
-    transform: translateY(-25%) rotate(45deg);
-    width: 7px;
-    height: 7px;
-    margin-left: 10px;
-    border-bottom: 3px solid #feaf06b3;
-    border-right: 3px solid #feaf06b3;
-    content: '';
-    transition: transform .5s;
+  transform: translateY(-25%) rotate(45deg);
+  width: 7px;
+  height: 7px;
+  margin-left: 10px;
+  border-bottom: 3px solid #feaf06b3;
+  border-right: 3px solid #feaf06b3;
+  content: '';
+  transition: transform .5s;
 }
 
 .qa[open] summary::after {
-    transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 
 .qa p {
-    position: relative;
-    transform: translateY(-10px);
-    opacity: 0;
-    margin: 0;
-    padding: .3em 3em 1.5em;
-    color: #333;
-    transition: transform .5s, opacity .5s;
+  position: relative;
+  transform: translateY(-10px);
+  opacity: 0;
+  margin: 0;
+  padding: .3em 3em 1.5em;
+  color: #333;
+  transition: transform .5s, opacity .5s;
 }
 
 .qa[open] p {
-    transform: none;
-    opacity: 1;
+  transform: none;
+  opacity: 1;
 }
 
 .qa p::before {
-    color: #ff8d8d;
-    line-height: 1.2;
-    content: "A";
+  color: #ff8d8d;
+  line-height: 1.2;
+  content: "A";
 }
 
 /* ========= フッター ========= */
@@ -714,5 +747,65 @@ hr {
 
   .grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ========= 動く背景 ========= */
+
+.area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+
+  background: linear-gradient(to left, #fff1dd, #ffe5c6);
+}
+
+/* 前面コンテンツ */
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* 丸コンテナ */
+.circles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  bottom: -150px;
+  animation: animate 25s linear infinite;
+
+  background: rgba(200, 150, 90, 0.35);
+  border-radius: 6px;
+  box-shadow:
+    0 14px 30px rgba(120, 70, 30, 0.28),
+    0 6px 12px rgba(120, 70, 30, 0.18),
+    inset 0 1px 2px rgba(255, 255, 255, 0.28);
+
+}
+
+/* アニメーション */
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-120vh) rotate(720deg);
+    opacity: 0;
   }
 }
