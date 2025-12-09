@@ -224,6 +224,87 @@ header {
   line-height: 1.7em;
 }
 
+.app-overview {
+  display: flex;
+  justify-content: center;     /* ← 中央基準 */
+  align-items: center;
+  gap: 10rem;
+  margin: 10rem auto;
+  max-width: 1200px;
+}
+
+.overview-left {
+  flex: 0.9;
+}
+
+.overview-right {
+  flex: 1.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-overview-h2 {
+  position: relative;
+  padding: .3em 0 .2em 1em;
+  margin-bottom: 3rem;
+  border-bottom: 3px solid #d08025;
+  font-size: 2.5rem;
+  color: #333;
+  width: fit-content;
+}
+
+.app-overview-h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: .3em;
+  width: 12px;
+  height: 11px;
+  background: #d08025;
+  transform: rotate(55deg);
+}
+
+.app-overview-h2::after {
+  content: '';
+  position: absolute;
+  top: .6em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #d08025;
+  transform: rotate(15deg);
+}
+
+.app-overview-li {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 2rem;
+  white-space: nowrap;   /* 改行防止 */
+}
+
+.app-overview-li::before {
+  content: '';
+  width: .8em;
+  height: .4em;
+  border-bottom: 4px solid #ff8800;
+  border-left: 4px solid #ff8800;
+  transform: rotate(-45deg);
+}
+
+.overview-image {
+  width: 110%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 30px;
+  filter: grayscale(100%);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+
 /* ========= 料金表 ========= */
 
 .pricing-heading{
